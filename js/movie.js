@@ -17,7 +17,7 @@ class Movie {
      * @return Promise Object
      */
     async getMovies() {
-        const response = await fetch(`https://cors-anywhere.herokuapp.com/http://www.omdbapi.com/?s=${this.movie}&apikey=${this.apiKey}`);
+        const response = await fetch(`https://cors-anywhere.herokuapp.com/https://www.omdbapi.com/?s=${this.movie}&apikey=${this.apiKey}`);
         const responseData = await response.json();
         return responseData;
     }
@@ -30,7 +30,7 @@ class Movie {
      * @return Promise Object
      */
     async getMovie(id) {
-        const response = await fetch(`https://cors-anywhere.herokuapp.com/http://www.omdbapi.com/?i=${id}&apikey=${this.apiKey}`);
+        const response = await fetch(`https://cors-anywhere.herokuapp.com/https://www.omdbapi.com/?i=${id}&apikey=${this.apiKey}`);
         const responseData = await response.json();
         return responseData;
     }
