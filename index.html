@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MoveInfo</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">MovieInfo</a>
+        </div>
+    </nav>
+    <!-- Main Content -->
+    <main class="container">
+        <div class="row">
+            <div class="col-md-10 offset-md-1">
+                <div class="jumbotron mt-5 mx-auto">
+                    <h4 class="display-4 text-center">Search For Movie Information</h4>
+                    <p class="lead text-center">Search for your fevorit movie.</p>
+                    <hr class="my-4">
+                    <form id="search-form">
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="searchInput" id="search-input" placeholder="Search Move...">
+                        </div>
+                        <button id="search-btn" class="btn btn-primary">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <hr class="my-4">
+        <!-- Movies -->
+        <div class="row" id="movies"></div>
+    </main>
+    <!-- Footer -->
+    <footer class="text-center bg-dark">
+        <p class="lead text-white p-5 mb-0">Copyrights &copy; MoveInfo - <span id="year"></span></p>
+    </footer>
+    <!-- Bootstrap Required Javascript files -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Custome Javscript Files -->
+    <script src="js/ui.js"></script>
+    <script src="js/movie.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        document.querySelector('#year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
